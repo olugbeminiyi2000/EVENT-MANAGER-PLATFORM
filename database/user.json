@@ -7,8 +7,18 @@
       "username": "michaelson",
       "email": "michael.obolo@yahoo.com",
       "password": "12345",
-      "isLoggedin": true,
+      "isLoggedin": false,
       "gravatarUrl": "https://www.gravatar.com/avatar/ad31c3216eaa53d02c15a5a659fc4cac?s=200"
+    },
+    {
+      "id": "2",
+      "first_name": "Excel",
+      "last_name": "Asaph",
+      "username": "excel",
+      "email": "excelasaph@yahoo.com",
+      "password": "excel",
+      "isLoggedin": true,
+      "gravatarUrl": "https://www.gravatar.com/avatar/3123b9f5640075e7cec7a841911afd78?s=200"
     }
   ]
 }

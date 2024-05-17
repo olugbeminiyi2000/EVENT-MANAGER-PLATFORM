@@ -135,6 +135,7 @@ function App() {
     setEmail('');
     setPassword('');
     setVerifyPassword('');
+    setSigninError(null);
     setSignupSuccess('User successfully Created :)');
     navigate("/login");
   }
