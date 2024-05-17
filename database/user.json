@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "first_name": "Obolo",
+      "last_name": "Michael",
+      "username": "michaelson",
+      "email": "michael.obolo@yahoo.com",
+      "password": "12345",
+      "isLoggedin": true,
+      "gravatarUrl": "https://www.gravatar.com/avatar/ad31c3216eaa53d02c15a5a659fc4cac?s=200"
+    }
+  ]
+}
