@@ -27,7 +27,7 @@
       "username": "abiodan",
       "email": "akumuyi@yahoo.com",
       "password": "abiodun",
-      "isLoggedin": false,
+      "isLoggedin": true,
       "gravatarUrl": "https://www.gravatar.com/avatar/58146d5e993d82be2007dc0bd2ecd306?s=200"
     }
   ],
@@ -49,6 +49,17 @@
           "userId": 2
         }
       ]
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "title": "Google developer's day",
+      "date": "2024-05-25",
+      "time": "18:13",
+      "location": "Kigali, Gasabo, Umujyi Wa Kigali, RWA",
+      "venue": "Kigali Convention centre",
+      "description": "trying the react app",
+      "booking": []
     }
   ]
 }

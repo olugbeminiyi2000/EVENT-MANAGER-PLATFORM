@@ -31,7 +31,8 @@ const UserBookedEventList = ({ userId, events, logUser }) => {
                         <p>{slicedUserEvent.time}</p>
                         <p>{slicedUserEvent.location}</p>
                         <p>{slicedUserEvent.venue}</p>
-                        <p>A total of {slicedUserEvent.booked.length > 1 ? `${slicedUserEvent.booking.length} persons` : `just ${slicedUserEvent.booking.length} person`} have booked already :)</p>
+                        <p>booking(s): {slicedUserEvent.booking.length}</p>
+                        {/* <p>A total of {slicedUserEvent.booking.length > 1 ? `${slicedUserEvent.booking.length} persons` : `just ${slicedUserEvent.booking.length} person`} have booked already :)</p> */}
                     </div>
                 </Link>
                 <div>{(slicedUserEvent.description).length > charToPrint ? `${(slicedUserEvent.description).slice(0, charToPrint)}...` : slicedUserEvent.description}</div>

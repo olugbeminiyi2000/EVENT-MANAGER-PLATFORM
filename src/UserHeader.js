@@ -16,7 +16,7 @@ const UserHeader = ({ logUser, navigate, noDataFound, users, setUsers }) => {
                 const changeIsLoggedIn = await userAxios.patch(`/users/${id}/`, { isLoggedin: false });
                 console.log(changeIsLoggedIn);
                 console.log(users);
-                navigate("/");
+                navigate("/login");
             } catch (error) {
                 console.error(`An Error with status ${error.response.status} and headers of ${error.response.headers} with data ${error.response.data} occured :(`);
             }
