@@ -7,6 +7,7 @@ import EventList from './EventList';
 import { useState, useEffect } from 'react';
 import userAxios from './apis/userApi';
 import { gravatar } from './gravatarUrl';
+import Event from './Event';
 
 function App() {
   /*
@@ -32,6 +33,8 @@ function App() {
   const [signinError, setSigninError] = useState(null);
   const [noUserAccount, setNoUserAccount] = useState(null);
   const [users, setUsers] = useState([]);
+  const [events, setEvents] = useState([]);
+  const [isEventDataGotten, setisEventDataGotten] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -53,6 +56,19 @@ function App() {
       }
     }
     fetchUsers();
+  }, []);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const eventsData = await userAxios.get("/events");
+        setEvents(eventsData.data);
+        setisEventDataGotten("Do nothing since data is gotten");
+      } catch (error) {
+        console.error(`An Error with status ${error.response.status} and headers of ${error.response.headers} with data ${error.response.data} occured :(`);
+      }
+    }
+    fetchEvents();
   }, []);
 
   /*
@@ -88,7 +104,7 @@ function App() {
 
     // check if the user exists
     const checkUserExist = function (user) {
-      if (user.username === username || user.email === email || (user.first_name === first_name && user.last_name === last_name)) {
+      if (user.username === username || user.email === email || (user.first_name === first_name.toUpperCase() && user.last_name === last_name.toUpperCase())) {
         return true;
       } else {
         return false;
@@ -113,7 +129,7 @@ function App() {
     const isLoggedin = false;
     const gravatarUrl = gravatar(email);
     // note here the id's of endpoints must be in strings
-    const newUser = { id: `${id}`, first_name, last_name, username, email, password, isLoggedin, gravatarUrl };
+    const newUser = { id: `${id}`, first_name: first_name.toUpperCase(), last_name: last_name.toUpperCase(), username, email, password, isLoggedin, gravatarUrl };
     // first add the data to the state in case someone
     // else wants to create an account before our posted
     // new user works.
@@ -174,7 +190,7 @@ function App() {
       try {
         const changeIsLoggedIn = await userAxios.patch(`/users/${id}/`, { isLoggedin: true });
         console.log(changeIsLoggedIn);
-        navigate(`/user/${id}`)
+        navigate(`/user/${id}`);
       } catch (error) {
         console.error(`An Error with status ${error.response.status} and headers of ${error.response.headers} with data ${error.response.data} occured :(`);
       }
@@ -189,7 +205,8 @@ function App() {
     <div className='App'>
       <HomeHeader />
       <Routes>
-        <Route path="/" element={<EventList />} />
+        <Route path="/" element={<EventList events={events} isEventDataGotten={isEventDataGotten} />} />
+        <Route path="/event/:id" element={<Event events={events} users={users} setEvents={setEvents} />} />
         <Route path="/login" element={<AuthLogin signupSuccess={signupSuccess} username={username} password={password} setUserName={setUserName} setPassword={setPassword} handleLogin={handleLogin} signinError={signinError} />} />
         <Route path="/signup" element={<AuthSignUp first_name={first_name} last_name={last_name} email={email} username={username} password={password} image={image} setFirstName={setFirstName} setLastName={setLastName} setEmail={setEmail} setUserName={setUserName} setPassword={setPassword} signupError={signupError} handleSignUp={handleSignUp} verifyPassword={verifyPassword} setVerifyPassword={setVerifyPassword} setImage={setImage} />} />
       </Routes>
