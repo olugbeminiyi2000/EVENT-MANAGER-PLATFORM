@@ -29,6 +29,16 @@
       "password": "abiodun",
       "isLoggedin": true,
       "gravatarUrl": "https://www.gravatar.com/avatar/58146d5e993d82be2007dc0bd2ecd306?s=200"
+    },
+    {
+      "id": "4",
+      "first_name": "PURITY",
+      "last_name": "KIHIU",
+      "username": "pkyla",
+      "email": "p.kihiu@alustudent.com",
+      "password": "Kyla24",
+      "isLoggedin": true,
+      "gravatarUrl": "https://www.gravatar.com/avatar/c792aca94eb6f16d3381f49a14139d7a?s=200"
     }
   ],
   "events": [
