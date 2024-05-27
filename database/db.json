@@ -17,7 +17,7 @@
       "username": "excel",
       "email": "excelasaph@yahoo.com",
       "password": "excel",
-      "isLoggedin": false,
+      "isLoggedin": true,
       "gravatarUrl": "https://www.gravatar.com/avatar/3123b9f5640075e7cec7a841911afd78?s=200"
     },
     {
@@ -50,7 +50,7 @@
       "time": "22:44",
       "location": "Kigali, Gasabo, Umujyi Wa Kigali, RWA",
       "venue": "Kigali Convention centre",
-      "description": "excel's events updated!!!",
+      "description": "excel's events updated!!! now again, and again",
       "booking": [
         {
           "userId": 3
