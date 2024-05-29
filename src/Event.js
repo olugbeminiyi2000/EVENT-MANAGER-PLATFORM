@@ -119,7 +119,7 @@ const Event = ({ events, users, setEvents }) => {
     return (
         <div>
             {isEventGotten ? theEvent.length > 0 ? (
-                <section>
+                <section style={bookButtonStyle}>
                     <div>
                         <h3>{title}</h3>
                         <p>{date}</p>
