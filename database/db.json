@@ -22,12 +22,12 @@
     },
     {
       "id": "3",
-      "first_name": "EXCEL",
+      "first_name": "ABIODUN",
       "last_name": "KUMUYI",
       "username": "abiodan",
       "email": "akumuyi@yahoo.com",
       "password": "abiodun",
-      "isLoggedin": false,
+      "isLoggedin": true,
       "gravatarUrl": "https://www.gravatar.com/avatar/58146d5e993d82be2007dc0bd2ecd306?s=200"
     },
     {
@@ -37,25 +37,50 @@
       "username": "pkyla",
       "email": "p.kihiu@alustudent.com",
       "password": "Kyla24",
-      "isLoggedin": true,
+      "isLoggedin": false,
       "gravatarUrl": "https://www.gravatar.com/avatar/c792aca94eb6f16d3381f49a14139d7a?s=200"
     }
   ],
   "events": [
     {
-      "id": "1",
-      "userId": "2",
-      "title": "Google developer's day",
-      "date": "2024-05-26",
-      "time": "22:44",
+      "id": "2",
+      "userId": "3",
+      "title": "Tradathon Info Session 1",
+      "date": "2024-05-24",
+      "time": "23:10",
       "location": "Kigali, Gasabo, Umujyi Wa Kigali, RWA",
-      "venue": "Kigali Convention centre",
-      "description": "excel's events updated!!!",
+      "venue": "ALU Conference Centre",
+      "description": "Let's talk markets!",
       "booking": [
         {
           "userId": 3
+        },
+        {
+          "userId": 2
         }
       ]
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "title": "Google developer's day",
+      "date": "2024-05-25",
+      "time": "18:13",
+      "location": "Kigali, Gasabo, Umujyi Wa Kigali, RWA",
+      "venue": "Kigali Convention centre",
+      "description": "trying the react app",
+      "booking": []
+    },
+    {
+      "id": "4",
+      "userId": "4",
+      "title": "",
+      "date": "",
+      "time": "",
+      "location": "",
+      "venue": "",
+      "description": "",
+      "booking": []
     }
   ]
 }
