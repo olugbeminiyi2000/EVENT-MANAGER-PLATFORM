@@ -17,7 +17,7 @@
       "username": "excel",
       "email": "excelasaph@yahoo.com",
       "password": "excel",
-      "isLoggedin": false,
+      "isLoggedin": true,
       "gravatarUrl": "https://www.gravatar.com/avatar/3123b9f5640075e7cec7a841911afd78?s=200"
     },
     {
@@ -49,8 +49,13 @@
       "date": "2024-05-24",
       "time": "23:10",
       "location": "Kigali, Gasabo, Umujyi Wa Kigali, RWA",
+<<<<<<< HEAD
       "venue": "ALU Conference Centre",
       "description": "Let's talk markets!",
+=======
+      "venue": "Kigali Convention centre",
+      "description": "excel's events updated!!! now again, and again",
+>>>>>>> a446e5d5dc68ae41bf8a999c4f0937edc1f958ba
       "booking": [
         {
           "userId": 3

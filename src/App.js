@@ -205,7 +205,7 @@ function App() {
     <div className='App'>
       <HomeHeader />
       <Routes>
-        <Route path="/" element={<EventList events={events} isEventDataGotten={isEventDataGotten} />} />
+        <Route path="/" element={<EventList events={events} isEventDataGotten={isEventDataGotten} users={users}/>} />
         <Route path="/event/:id" element={<Event events={events} users={users} setEvents={setEvents} />} />
         <Route path="/login" element={<AuthLogin signupSuccess={signupSuccess} username={username} password={password} setUserName={setUserName} setPassword={setPassword} handleLogin={handleLogin} signinError={signinError} />} />
         <Route path="/signup" element={<AuthSignUp first_name={first_name} last_name={last_name} email={email} username={username} password={password} image={image} setFirstName={setFirstName} setLastName={setLastName} setEmail={setEmail} setUserName={setUserName} setPassword={setPassword} signupError={signupError} handleSignUp={handleSignUp} verifyPassword={verifyPassword} setVerifyPassword={setVerifyPassword} setImage={setImage} />} />

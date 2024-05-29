@@ -12,6 +12,7 @@ const UserEditEvent = ({ events, logUser, navigate, setEvents, userId }) => {
   const [venue, setVenue] = useState('');
   const [description, setDescription] = useState('');
   const [booking, setBooking] = useState([]);
+  const [editSuccess, setEditSuccess] = useState('');
   const { id } = useParams();
 
   console.log(events);
@@ -50,11 +51,13 @@ const UserEditEvent = ({ events, logUser, navigate, setEvents, userId }) => {
     };
     doPutEvent(editEvent);
     setEvents(allEvents);
+    setEditSuccess("Event updated !!!");
   }
 
   return (
     <div>
       <section>
+        {editSuccess ? <p>{editSuccess}</p> : null}
         {logUser.length !== 0 ? logUser[0].isLoggedin ? isEventGotten ? theEvent.length > 0 ? (
           <form onSubmit={handleSubmitEdit}>
             <p>
@@ -113,7 +116,7 @@ const UserEditEvent = ({ events, logUser, navigate, setEvents, userId }) => {
               />
             </p>
             <p>
-              <button type="submit">
+              <button type="submit" onMouseOver={() => setEditSuccess('')}>
                 Submit Edit
               </button>
             </p>
