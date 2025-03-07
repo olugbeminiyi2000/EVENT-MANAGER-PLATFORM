@@ -13,10 +13,6 @@ Event Manager is a React-based web application designed to help users create, ma
 - **User Profiles**: Manage your profile, including a Gravatar integration for avatars.
 - **Responsive Design**: Works seamlessly across devices for on-the-go event management.
 
-## License
-![License](https://img.shields.io/badge/license-MIT-blue.svg)  
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## File Structure
 - **`App.css`**: Styles for the main application.
 - **`App.js` & `App2.js`**: Core app components and routing logic.
