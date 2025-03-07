@@ -28,3 +28,15 @@ Event Manager is a React-based web application designed to help users create, ma
 
 ## Getting Started
 1. Clone the repository:
+```bash
+git clone https://github.com/olugbeminiyi2000/EVENT-MANAGER-PLATFORM/
+```
+2. Install dependencies:
+```bash
+npm install
+```
+3. Start the server:
+```
+npm start
+```
+4. Open your browser at `http://localhost:3000`
