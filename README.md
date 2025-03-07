@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+![JavaScript](https://img.shields.io/badge/JavaScript-70%25-brightgreen.svg) ![React](https://img.shields.io/badge/React-18.3.1-brightgreen.svg) ![CSS](https://img.shields.io/badge/CSS-20%25-blue.svg) ![Axios](https://img.shields.io/badge/Axios-1.7.2-red.svg) ![Crypto-JS](https://img.shields.io/badge/Crypto--JS-4.2.0-brown.svg) ![React-Icons](https://img.shields.io/badge/React--Icons-5.2.1-brightblue.svg) ![React-Router-DOM](https://img.shields.io/badge/React--Router--DOM-6.23.1-lightgrey.svg) ![Contributors](https://img.shields.io/badge/contributors-2-orange.svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Event Manager
 
-## Available Scripts
+## Overview
+Event Manager is a React-based web application designed to help users create, manage, and track events effortlessly. Built by me and one collaborator, this app provides a user-friendly interface for event planning, complete with authentication, event listing, booking capabilities, and profile management. Whether you're organizing a meetup or tracking your schedule, Event Manager streamlines the process.
 
-In the project directory, you can run:
+## Features
+- **User Authentication**: Sign up and log in securely to access personalized features.
+- **Event Creation & Editing**: Create new events and edit existing ones with ease.
+- **Event Listing**: View all events or filter to see only your booked or created events.
+- **Booking System**: Book events and track your reservations.
+- **User Profiles**: Manage your profile, including a Gravatar integration for avatars.
+- **Responsive Design**: Works seamlessly across devices for on-the-go event management.
 
-### `npm start`
+## License
+![License](https://img.shields.io/badge/license-MIT-blue.svg)  
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## File Structure
+- **`App.css`**: Styles for the main application.
+- **`App.js` & `App2.js`**: Core app components and routing logic.
+- **`AuthLogin.js` & `AuthSignUp.js`**: Authentication components for login and signup.
+- **`Event.js` & `EventList.js`**: Components for individual events and event listings.
+- **`HomeHeader.js`**: Header for the public homepage.
+- **`UserBookedEventList.js`**: Displays events a user has booked.
+- **`UserCreate.js` & `UserEditEvent.js`**: Tools for creating and editing events.
+- **`UserEvent.js` & `UserEventList.js`**: Manages user-specific events.
+- **`UserHeader.js`**: Header for authenticated users.
+- **`UserProfile.js`**: User profile management with Gravatar support.
+- **`gravatarUrl.js`**: Utility for generating Gravatar URLs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Getting Started
+1. Clone the repository:
